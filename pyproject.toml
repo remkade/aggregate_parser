@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitmodule_parser"
+authors = [
+    {name = "Kyle Leaers", email = "kleaders@anaconda.com"},
+]
+description = "Parses gitmodules. This is a demo project just for fun"
+readme = "README.rst"
+requires-python = ">=3.10"
+keywords = ["one", "two"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.scripts]
+my-script = "gitmodule_parser:__main__"
